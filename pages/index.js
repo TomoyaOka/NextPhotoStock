@@ -40,8 +40,8 @@ export default function Home() {
         <div className={styles.containerFlex}>
           <Side />
           <div className={styles.containerRight}>
-            <h2 className={styles.containerTitle}>Active Category</h2>
-            <h3 className={styles.containerSub}>Landscape</h3>
+            <h2 className={styles.containerTitle}>KRAFT PhotoStock</h2>
+            <h3 className={styles.containerSub}>21:48:56</h3>
             {/* mapで配列を回す(v-for的な感じ) */}
             <div className={styles.containerCards}>
               {items.map((item) => {

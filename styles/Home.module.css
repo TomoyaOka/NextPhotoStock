@@ -10,7 +10,7 @@
 }
 
 .containerRight {
-  width: 80%;
+  width: 90%;
   min-height: 100vh;
   padding: 10px;
 }
@@ -39,7 +39,7 @@
 .card {
   width: 33%;
   border: 1px solid;
-  padding-top: 27%;
+  padding-top: 22%;
   margin-bottom: 8px;
 }
 
@@ -58,13 +58,14 @@
     padding-top: 20px;
   }
   .containerTitle {
-    font-size: 20px;
+    font-size: 24px;
   }
   .containerSub {
-    font-size: 40px;
+    font-size: 50px;
   }
   .card {
     width: 49%;
+    padding-top: 30%;
     margin-bottom: 6px;
   }
 }

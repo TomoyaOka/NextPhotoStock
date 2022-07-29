@@ -1,11 +1,11 @@
 .side {
-  width: 20%;
-  height: 100vh;
-  /* border: 1px red solid; */
+  min-height: 100vh;
+  border-right: 1px #000 solid;
   padding: 10px;
 }
 
 .sideBody li {
+  width: 100%;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -18,7 +18,10 @@
 @media (max-width: 767px) {
   .side {
     width: 100%;
-    height: auto;
+    min-height: auto;
+  }
+  .sideBody {
+    margin-bottom: 24px;
   }
   .sideBody li {
     display: inline;

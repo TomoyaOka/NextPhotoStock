@@ -1,4 +1,5 @@
 import styles from "./style/Side.module.css";
+import Link from "next/link";
 const Side = () => {
   return (
     <>
@@ -6,8 +7,8 @@ const Side = () => {
         <ul className={styles.sideBody}>
           <li>Archives</li>
           <li>All</li>
-          <li>City</li>
-          <li>Landscape</li>
+          {/* <li>City</li>
+          <li>Landscape</li> */}
         </ul>
       </div>
     </>

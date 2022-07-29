@@ -15,20 +15,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout";
 import Side from "../components/Side";
+import { client } from "../libs/client";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ photo }) {
   /*----------------------------
    * ループ用の配列
    * ------------------------------*/
-  const items = [
-    { id: 1, content: "" },
-    { id: 2, content: "" },
-    { id: 3, content: "" },
-    { id: 4, content: "" },
-    { id: 5, content: "" },
-    { id: 6, content: "" },
-  ];
+  console.log(photo);
   return (
     <Layout>
       <div className={styles.container}>
@@ -44,10 +38,10 @@ export default function Home() {
             <h3 className={styles.containerSub}>21:48:56</h3>
             {/* mapで配列を回す(v-for的な感じ) */}
             <div className={styles.containerCards}>
-              {items.map((item) => {
+              {photo.map((photo) => {
                 return (
-                  <div className={styles.card} key={item.id}>
-                    {item.id}
+                  <div className={styles.card} key={photo.id}>
+                    <img src={photo.img.url} alt="" />
                   </div>
                 );
               })}
@@ -58,3 +52,13 @@ export default function Home() {
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "photo" });
+
+  return {
+    props: {
+      photo: data.contents,
+    },
+  };
+};

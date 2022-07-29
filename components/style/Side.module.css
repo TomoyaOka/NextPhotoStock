@@ -1,0 +1,31 @@
+.side {
+  width: 20%;
+  height: 100vh;
+  /* border: 1px red solid; */
+  padding: 10px;
+}
+
+.sideBody li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sideBody li:nth-of-type(1) {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .side {
+    width: 100%;
+    height: auto;
+  }
+  .sideBody li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .sideBody li:nth-of-type(1) {
+    display: block;
+  }
+}

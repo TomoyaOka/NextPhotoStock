@@ -1,0 +1,17 @@
+:root {
+  --main-color: #333;
+  --sub-color: #fff;
+  --text-color: #333;
+
+  --xl: 3.2rem;
+  --lg: 2.4rem;
+  --md: 1.6rem;
+  --sm: 1.4rem;
+  --ss: 1.2rem;
+
+  --index-header: 100;
+  --index-modal: 200;
+  --index-animation: 1000;
+
+  --inner: 110rem;
+}

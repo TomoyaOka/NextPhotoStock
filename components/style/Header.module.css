@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  border-right: 1px #000 solid;
+}
+
+.headerBox {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px #000 solid;
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 40px;
+  }
+  .headerBox {
+    height: 40px;
+  }
+}

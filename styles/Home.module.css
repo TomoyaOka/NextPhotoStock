@@ -16,12 +16,16 @@
 }
 
 .containerTitle {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 .containerSub {
-  font-size: 96px;
+  font-size: 60px;
+}
+
+.containerSub span {
+  font-size: 46px;
 }
 
 .containerCards {

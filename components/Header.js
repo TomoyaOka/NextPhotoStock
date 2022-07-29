@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.headerBox}>
+        <h2 className={styles.headerBox}>
           <Image src="/logo.png" alt="" width={30} height={30}></Image>
-        </div>
+        </h2>
       </header>
     </>
   );

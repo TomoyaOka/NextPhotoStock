@@ -6,7 +6,8 @@
 html,
 body {
   font-family: "font";
-  background-color: #bdbdbd;
+  color: var(--text-color);
+  background-color: var(--body-color);
 }
 
 a {

@@ -5,9 +5,7 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <h2 className={styles.headerBox}>
-          <Image src="/logo.png" alt="" width={30} height={30}></Image>
-        </h2>
+        <div className={styles.headerBox}>{/* <Image src="/logo.png" alt="" width={30} height={30}></Image> */}</div>
       </header>
     </>
   );

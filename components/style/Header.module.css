@@ -4,7 +4,7 @@
   left: 0;
   width: 50px;
   height: 100vh;
-  border-right: 1px #000 solid;
+  border-right: 1px var(--line-color) solid;
 }
 
 .headerBox {
@@ -13,7 +13,8 @@
   justify-items: center;
   width: 100%;
   height: 50px;
-  border-bottom: 1px #000 solid;
+  background-color: var(--btn-color);
+  mix-blend-mode: difference;
 }
 
 @media (max-width: 767px) {

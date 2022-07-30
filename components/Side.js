@@ -4,12 +4,8 @@ const Side = () => {
   return (
     <>
       <div className={styles.side}>
-        <ul className={styles.sideBody}>
-          <li>Archives</li>
-          <li>All</li>
-          {/* <li>City</li>
-          <li>Landscape</li> */}
-        </ul>
+        <p className={styles.sideText}>A site for storing photos taken on holidays and photos used at work.</p>
+        <p className={styles.sideText}>Unauthorized use or unauthorized reproduction is prohibited.</p>
       </div>
     </>
   );

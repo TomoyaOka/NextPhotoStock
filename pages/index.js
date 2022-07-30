@@ -20,8 +20,26 @@ import ja from "date-fns/locale/ja";
 import styles from "../styles/Home.module.css";
 
 function Time() {
-  return <time suppressHydrationWarning>{format(new Date(), "HH-mm-ss", { locale: ja })}</time>;
+  return <time suppressHydrationWarning>{format(new Date(), "HH:mm:ss", { locale: ja })}</time>;
 }
+
+let mode = true;
+function Dark() {
+  mode = !mode;
+
+  if (mode === false) {
+    document.documentElement.style.setProperty("--text-color", "#bdbdbd");
+    document.documentElement.style.setProperty("--line-color", "#bdbdbd");
+    document.documentElement.style.setProperty("--body-color", "#000000");
+    document.documentElement.style.setProperty("--btn-color", "#bdbdbd");
+  } else if (mode === true) {
+    document.documentElement.style.setProperty("--text-color", "#000000");
+    document.documentElement.style.setProperty("--line-color", "#000000");
+    document.documentElement.style.setProperty("--body-color", "#bdbdbd");
+    document.documentElement.style.setProperty("--btn-color", "#000000");
+  }
+}
+
 export default function Home({ photo }) {
   return (
     <Layout>
@@ -35,6 +53,7 @@ export default function Home({ photo }) {
           <meta property="og:description" content="KRAFT PhotoStockSite in NextJs" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <button onClick={Dark} className={styles.button}></button>
         <div className={styles.containerFlex}>
           <Side />
           <div className={styles.containerRight}>

@@ -1,7 +1,11 @@
 :root {
   --main-color: #333;
   --sub-color: #fff;
-  --text-color: #333;
+
+  --text-color: #000;
+  --line-color: #000;
+  --body-color: #bdbdbd;
+  --btn-color: #000;
 
   --xl: 3.2rem;
   --lg: 2.4rem;
